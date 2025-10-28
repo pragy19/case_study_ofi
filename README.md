@@ -9,37 +9,56 @@ The dashboard analyzes 7 interconnected datasets to identify key drivers of oper
 Follow these steps to run the dashboard on your local machine.
 
 ### 1. Prerequisites
+
 * Python 3.8+
 * `pip` (Python package installer)
 
 ### 2. Setup
 
 **Clone the repository:**
+
 ```bash
 git clone [Your GitHub Repository URL]
 cd [Your-Repository-Name]
+```
 
-Create and activate a virtual environment (Recommended):
+**Create and activate a virtual environment (Recommended):**
 
 On macOS/Linux:
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
 On Windows:
+
+```bash
 python -m venv venv
 .\venv\Scripts\activate
+```
 
-3. Install Dependencies
+### 3. Install Dependencies
+
 Install all the required Python libraries using the requirements.txt file:
-pip install -r requirements.txt
 
-Run the Streamlit App
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit App
+
 Make sure all 7 CSV files are in the same folder as app.py.
+
+```bash
 streamlit run app.py
+```
 
 A new tab will automatically open in your default web browser, displaying the interactive dashboard.
 
-📁 Project Structure
+## 📁 Project Structure
+
+```
 .
 ├── 📄 app.py                     # The main Streamlit application code
 ├── 📄 requirements.txt           # List of all Python dependencies
@@ -52,3 +71,4 @@ A new tab will automatically open in your default web browser, displaying the in
 ├── 📊 customer_feedback.csv      # Dataset: Customer voice data
 ├── 📊 vehicle_fleet.csv          # Dataset: Fleet information
 └── 📊 warehouse_inventory.csv    # Dataset: Warehouse stock levels
+```
