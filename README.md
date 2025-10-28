@@ -18,8 +18,8 @@ Follow these steps to run the dashboard on your local machine.
 **Clone the repository:**
 
 ```bash
-git clone [Your GitHub Repository URL]
-cd [Your-Repository-Name]
+git clone [https://github.com/pragy19/case_study_ofi]
+cd [case_study_ofi]
 ```
 
 **Create and activate a virtual environment (Recommended):**
